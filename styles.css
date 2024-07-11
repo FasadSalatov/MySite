@@ -48,7 +48,7 @@ nav {
     display: inline-block;
     width: 40px;
     height: 40px;
-    margin: 0 10px;
+    margin: 0 30px;
     background-size: contain;
     filter: grayscale(100%);
     transition: filter 0.3s;
