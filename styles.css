@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(src/wall.jpg);
+    background-size: cover;
+    color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Прозрачный блок */
+    padding: 20px;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 600px;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #ff6347; /* Сочетающийся красный цвет */
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #ffa07a; /* Акцентный цвет */
+}
+
+.highlight {
+    color: #ff6347; /* Красный акцент */
+}
+
+nav {
+    margin: 20px 0;
+}
+
+.icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    background-size: contain;
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+}
+
+.icon:hover {
+    filter: grayscale(0);
+}
+
+.vk { background-image: url('path/to/vk-icon.png'); }
+.telegram { background-image: url('path/to/telegram-icon.png'); }
+.github { background-image: url('path/to/github-icon.png'); }
+.steam { background-image: url('path/to/steam-icon.png'); }
+.discord { background-image: url('path/to/discord-icon.png'); }
+
+footer {
+    margin-top: 20px;
+    font-style: italic;
+    color: #aaa;
+    position: relative;
+    width: 100%;
+}
+
+.marquee {
+    overflow: hidden;
+    width: 100%;
+}
+
+.marquee p {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 120s linear(0.71 -19.12%, 1 100%) infinite;
+    color: #ffa07a; /* Сочетающийся акцентный цвет */
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Адаптивный дизайн */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px;
+        margin: 0 5px;
+    }
+}
